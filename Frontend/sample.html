@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register</title>
+</head>
+<body>
+	<h1>Register</h1>
+	<form >
+		<label for="firstName">First Name:</label>
+		<input id="firstName" type="text" name="firstName" required placeholder="varun">
+		<label for="lastName">Last Name:</label>
+		<input id="lastName" type="text" name="lastName" required placeholder="dunga">
+		<div>
+			<label for="male">Male</label>
+			<input id="male" type="radio" name="gender" value="M">
+			<label for="female">Female</label>
+			<input id="female" type="radio" name="gender" value="F">
+			<label for="other">Other</label>
+			<input id="other" type="radio" name="gender" value="O">
+		</div>
+		<label for="userName">User Name:</label>
+		<input id="userName" type="email" name="username" required placeholder="abc@domain.com">
+		<label for="password">Password:</label>
+		<input id="password" type="password" name="password" pattern=".{5,10}" required title="5 to 10 chars">
+		<div>
+			<label for="">Birthday:</label>
+			<select id="Birthday">
+				<option>Month</option>
+				<option>Jan</option>
+				<option>Feb</option>
+			</select>
+		    <select id="Birthday">
+		    	<option>Day</option>
+			    <option>01</option>
+			    <option>02</option>
+		    </select>
+		    <select id="Birthday"> 
+		    	<option>Year</option>
+			    <option>1992</option>
+			    <option>1993</option>
+		    </select>
+		</div>
+		<div>
+			<label for="terms">I agree to terms and conditions</label>
+		    <input id="terms" type="checkbox" name="terms" required>
+		</div>
+		<button>Submit</button>
+	</form>
+
+</body>
+</html>
